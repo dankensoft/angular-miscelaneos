@@ -1,0 +1,12 @@
+
+<!-- ngStyle y su uso con directivas de atributos -->
+<h5>ngStyle y su uso con directivas de atributos</h5>
+<p [style.fontSize.px]="tamano">
+  Hola mundo... Esta es una etiqueta!!
+</p>
+<button [ngStyle]="{'margin-right':'5px'}" class="btn btn-primary" (click)="tamano = tamano + 5">
+  <i class="fa fa-plus"></i>
+</button>
+<button [ngStyle]="{'margin-right':'5px'}" class="btn btn-primary" (click)="tamano = tamano - 5">
+  <i class="fa fa-minus"></i>
+</button>
