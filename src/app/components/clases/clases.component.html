@@ -1,0 +1,29 @@
+<div [ngClass]="alerta" class="alert" role="alert">
+  This is a success alert—check it out!
+</div>
+<button [ngStyle]="{'margin-right':'5px'}" class="btn btn-primary" (click)="alerta = 'alert-primary'">
+  Primary
+</button>
+<button [ngStyle]="{'margin-right':'5px'}" class="btn btn-secondary" (click)="alerta = 'alert-secondary'">
+  Secondary
+</button>
+<button [ngStyle]="{'margin-right':'5px'}" class="btn btn-info" (click)="alerta = 'alert-info'">
+  Info
+</button>
+<button [ngStyle]="{'margin-right':'5px'}" class="btn btn-success" (click)="alerta = 'alert-success'">
+  Success
+</button>
+<button [ngStyle]="{'margin-right':'5px'}" class="btn btn-warning" (click)="alerta = 'alert-warning'">
+  Warning
+</button>
+<button [ngStyle]="{'margin-right':'5px'}" class="btn btn-light" (click)="alerta = 'alert-light'">
+  Light
+</button>
+<button [ngStyle]="{'margin-right':'5px'}" class="btn btn-dark" (click)="alerta = 'alert-dark'">
+  Dark
+</button>
+<h3 [ngClass]="{ 'text-danger': propiedades.danger, 'text-info': !propiedades.danger }">Hola DanKenSoft!!</h3>
+<button (click)="propiedades.danger = !propiedades.danger" class="btn"
+        [ngClass]="{ 'btn-danger': propiedades.danger, 'btn-info': !propiedades.danger }">
+  Cambiar
+</button>
